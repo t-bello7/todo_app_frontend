@@ -27,7 +27,7 @@ class App extends Component {
 
   getTodos(){
     axios
-    .get("/api")
+    .get("https://todo-app-api-tomi.herokuapp.com/api/")
     .then(res => {
       this.setState({todos:res.data});
     })
